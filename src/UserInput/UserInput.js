@@ -8,7 +8,7 @@ import './UserInput.css'
 const userInput = () => {
     return (
         <div className="UserInput">
-            <h2>UserInput is here</h2>
+            <input></input>
         </div>
     )
 }
