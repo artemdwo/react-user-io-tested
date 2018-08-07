@@ -8,7 +8,8 @@ import './UserOutput.css'
 const userOutput = () => {
     return (
         <div className="UserOutput">
-            <h2>Here is userOutput component!</h2>
+            <p>Paragraph 1</p>
+            <p>Paragraph 2</p>
         </div>
     )
 }
