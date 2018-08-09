@@ -5,10 +5,13 @@ import React from 'react'
 import './UserInput.css'
 
 // userInput component main render
-const userInput = () => {
+const userInput = (prpts) => {
   return (
     <div className="UserInput">
-      <input></input>
+      {prpts.children}
+      <p/>
+      <input type="text" onChange={prpts.changedNameRef} value={prpts.userName} />
+      <hr/>
     </div>
   )
 }
