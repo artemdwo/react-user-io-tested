@@ -19,7 +19,7 @@ describe('<App /> component', () => {
     expect(wrapper.find(App)).toHaveReturned
   })
 
-  it('Right column has initial state and changes the state by click of the first button', () => {
+  it('Left column has initial state and changes the state by click of the left button', () => {
     const init = {
       users: [
         {name:"John"},
@@ -43,7 +43,7 @@ describe('<App /> component', () => {
     expect(wrapper.state().users).toEqual(expected.users)
   })
 
-  it('the second button should be hidden', () => {
+  it('Right button should be hidden', () => {
     expect(wrapper.find('button').at(1).prop('style').visibility).toBe('hidden')
   })
 })
